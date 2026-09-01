@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zh-CN">
+
+<head>
+        <link rel="canonical" href="https://fastnodes.github.io/news/article-290949.htm" />
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>从零到一：Quantumult + V2Ray 保姆级配置指南，解锁无界网络体验</title>
+        <meta name="description" content="为什么你需要这篇指南？  在信息流动日益重要的今天，访问全球互联网资源已成为许多人工作、学习和娱乐的刚需。然而，地理限制、网络审查和隐私泄露等问题，让“自由上网”变成了一项技术活。面对琳琅满目的工具，" />
+        <link rel="icon" href="/assets/website/img/sing_box_node/favicon.ico" type="image/x-icon"/>
+
+    <meta name="author" content="Fast Nodes 免费节点 订阅官网">
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://fastnodes.github.io/news/article-290949.htm" />
+    <meta property="og:site_name" content="Fast Nodes 免费节点 订阅官网" />
+    <meta property="og:title" content="从零到一：Quantumult + V2Ray 保姆级配置指南，解锁无界网络体验" />
+    <meta property="og:image" content="https://fastnodes.github.io/uploads/20240825-1/6e65073fbec9666d38dbc4b2db7cf40f.webp" />
+        <meta property="og:release_date" content="2026-08-27T10:48:13" />
+    <meta property="og:updated_time" content="2026-08-27T10:48:13" />
+        <meta property="og:description" content="为什么你需要这篇指南？  在信息流动日益重要的今天，访问全球互联网资源已成为许多人工作、学习和娱乐的刚需。然而，地理限制、网络审查和隐私泄露等问题，让“自由上网”变成了一项技术活。面对琳琅满目的工具，" />
+        
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta name="applicable-device" content="pc,mobile" />
+    <meta name="renderer" content="webkit" />
+    <meta name="force-rendering" content="webkit" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta name="robots" content="max-image-preview:large" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="从零到一：Quantumult + V2Ray 保姆级配置指南，解锁无界网络体验">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="dns-prefetch" href="https:/www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.googleadservices.com">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
+    <link rel="dns-prefetch" href="https://cm.g.doubleclick.net">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+
+    <!-- Web Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- ========================= CSS here ========================= -->
+    <link rel="stylesheet" href="/assets/website/css/sing_box_node/bootstrap.min.css" />
+    <link rel="stylesheet" href="/assets/website/css/sing_box_node/LineIcons.2.0.css" />
+    <link rel="stylesheet" href="/assets/website/css/sing_box_node/animate.css" />
+    <link rel="stylesheet" href="/assets/website/css/sing_box_node/tiny-slider.css" />
+    <link rel="stylesheet" href="/assets/website/css/sing_box_node/glightbox.min.css" />
+    <link rel="stylesheet" href="/assets/website/css/sing_box_node/main.css" />
+    <link rel="stylesheet" href="/assets/website/css/G.css" />
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6YPSF623K2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-6YPSF623K2');
+</script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3332997411212854" crossorigin="anonymous"></script>
+    
+</head>
+
+<body data-page="detail">
+        <div class="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-icon">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <!-- /End Preloader -->
+    <!-- Start Header Area -->
+    <header class="header navbar-area">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <div class="nav-inner">
+                        <!-- Start Navbar -->
+                        <nav class="navbar navbar-expand-lg">
+                            <a class="navbar-brand" href="/">
+                                                        <span>Fast Nodes</span>
+                                                        </a>
+                            <button class="navbar-toggler mobile-menu-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+                                <ul id="nav" class="navbar-nav ms-auto">
+                                                                        <li class="nav-item">
+                                        <a href="/news/">新闻资讯</a>
+                                    </li>
+                                                                    </ul>
+                            </div> <!-- navbar collapse -->
+                        </nav>
+                        <!-- End Navbar -->
+                    </div>
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </header>
+    <!-- End Header Area -->
+    <!-- Start Breadcrumbs -->
+    <div class="breadcrumbs overlay">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 offset-lg-2 col-md-12 col-12">
+                    <div class="breadcrumbs-content">
+                        <h1 class="page-title">从零到一：Quantumult + V2Ray 保姆级配置指南，解锁无界网络体验</h1>
+                    </div>
+                    <ul class="breadcrumb-nav">
+                        <li><a href="/">首页</a></li>
+                        <li><a href="/news/">新闻资讯</a></li>
+                        <li>正文</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Breadcrumbs -->
+    <!-- Start Departments  Area -->
+    <section class="departments section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <input type="hidden" id="share-website-info" data-name="Clash Node免费节点站" data-url="https://clashnode.github.io">
+<div class="xcblog-blog-detail xcblog-blog-detail-defined">
+      <h2>为什么你需要这篇指南？</h2>  <p>在信息流动日益重要的今天，访问全球互联网资源已成为许多人工作、学习和娱乐的刚需。然而，地理限制、网络审查和隐私泄露等问题，让“自由上网”变成了一项技术活。面对琳琅满目的工具，很多新手往往感到无从下手——是选客户端，还是选协议？是买订阅，还是自己搭建服务器？</p>  <p>今天，我将带你彻底搞懂两个高频名词：<strong>Quantumult</strong> 和 <strong>V2Ray</strong>，并手把手教你如何将二者结合，打造一套稳定、高效、安全的科学上网方案。这不是一篇枯燥的说明书，而是一份基于实战经验的完整指南。读完它，你不仅能顺利配置成功，还能理解背后的原理，从此不再被各种“玄学问题”困扰。</p>  <h2>第一章：概念扫盲——Quantumult 和 V2Ray 到底是什么？</h2>  <h3>1.1 Quantumult：你的全能网络遥控器</h3>  <p>很多人第一次听到“Quantumult”这个名字，会以为它是一个复杂的量子物理工具。实际上，它是一款在 iOS 平台上广受好评的<strong>网络代理客户端</strong>。你可以把它想象成一个“遥控器”——它本身不产生网络信号，但能精准地控制你设备上的所有网络流量走向。</p>  <p>Quantumult 的强大之处在于： - <strong>多协议支持</strong>：它不挑食，无论是主流的 V2Ray、Shadowsocks，还是小众的 Trojan、HTTP/HTTPS 代理，它都能完美驾驭。 - <strong>精细化规则管理</strong>：你可以设定“哪些网站走代理，哪些网站直连”，实现国内网站秒开、国外网站流畅的智能分流。 - <strong>界面清爽</strong>：相比一些臃肿的工具，Quantumult 的 UI 设计简洁直观，状态一目了然，点击即可切换节点。</p>  <p>简单说，Quantumult 是你设备上的“流量交通警察”，而 V2Ray 则是它管辖下的一条“高速通道”。</p>  <h3>1.2 V2Ray：底层协议里的“瑞士军刀”</h3>  <p>如果说 Quantumult 是遥控器，那 V2Ray 就是信号发射塔。V2Ray 是一个<strong>开源的网络代理平台</strong>，它提供了非常底层的网络传输能力。它不像某些老旧的协议那样容易被识别和封锁，而是通过多种传输方式（如 TCP、WebSocket、HTTP/2、gRPC）和伪装技术（如 TLS 加密、CDN 中转），将你的流量包装成普通网页访问，从而有效规避深度包检测（DPI）。</p>  <p>V2Ray 的核心优势在于<strong>灵活性</strong>。它允许你自由组合传输层和安全层配置，甚至可以将流量伪装成访问云服务的请求。对于追求极致稳定性和隐私保护的用户来说，V2Ray 是当之无愧的首选。</p>  <h3>1.3 它们的关系：最佳拍档</h3>  <p>简单来说，<strong>Quantumult 是“客户端”，V2Ray 是“协议”</strong>。Quantumult 通过调用 V2Ray 的协议规则和服务器配置，将你的请求加密并发送至远程 V2Ray 服务器，再由服务器转发到目标网站。两者配合，实现了“客户端控制规则+服务端提供通道”的完美闭环。没有 Quantumult，你需要手动在命令行操作 V2Ray，极其繁琐；没有 V2Ray，Quantumult 就失去了最强大的代理能力。</p>  <h2>第二章：实战准备——安装与获取关键信息</h2>  <h3>2.1 安装 Quantumult：只需三步</h3>  <ol> <li><strong>打开 App Store</strong>：在 iOS 设备上搜索 “Quantumult”。</li> <li><strong>注意认准图标</strong>：请认准开发者是 “Cross Utility Ltd” 的应用，避免下载到山寨版。</li> <li><strong>付费下载</strong>：这是一款付费应用（价格约几十元人民币），但一次买断，无内购陷阱。相比它带来的网络自由和效率提升，这笔投资绝对值得。</li> </ol>  <p>安装完成后，先别急着打开。我们需要先准备好“食材”——也就是 V2Ray 的服务器信息。</p>  <h3>2.2 获取 V2Ray 服务器信息：两种途径</h3>  <ul> <li><strong>途径一：购买订阅服务</strong>。这是最省心的方式。你只需在机场（V2Ray 服务提供商）购买流量套餐，他们会提供一个“订阅链接”。打开 Quantumult，点击右下角的“设置”图标，进入“配置文件” -> “下载”，粘贴订阅链接，即可自动拉取所有节点信息。</li> <li><strong>途径二：自建服务器</strong>。如果你有一定的技术基础，可以租用 VPS（虚拟专用服务器），手动安装 V2Ray 服务端。这种方式需要你自行记录以下关键信息：  <ul> <li><strong>服务器地址</strong>：通常是 IP 或域名。</li> <li><strong>端口</strong>：默认一般为 443 或 10086 等。</li> <li><strong>用户 ID（UUID）</strong>：这是一串类似 <code>xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx</code> 的字符串。</li> <li><strong>额外 ID（alterId）</strong>：早期版本需要，新版本通常为 0。</li> <li><strong>加密方式</strong>：如 aes-128-gcm、chacha20-poly1305 等。</li> <li><strong>传输协议</strong>：tcp、ws（WebSocket）、grpc 等。</li> </ul></li> </ul>  <h2>第三章：核心操作——在 Quantumult 中手动配置 V2Ray</h2>  <p>如果你没有订阅链接，而是手动获取了上述服务器信息，请按照以下步骤操作。这一步是很多新手最容易出错的地方，请务必仔细。</p>  <h3>3.1 进入添加节点界面</h3>  <p>打开 Quantumult 主界面，你会看到底部有几个标签页。点击右下角的 <strong>“设置”</strong>（齿轮图标），然后选择 <strong>“配置文件”</strong>。在这个页面，点击右上角的 <strong>“+”</strong> 号，选择 <strong>“添加节点”</strong>。</p>  <h3>3.2 逐项填写 V2Ray 参数</h3>  <p>在弹出的编辑框中，你会看到很多字段。别慌，我们只需关注几个核心项：</p>  <ul> <li><strong>类型</strong>：下拉菜单中，务必选择 <strong><code>V2Ray</code></strong>。</li> <li><strong>标签</strong>：随便起一个好记的名字，比如“主力节点-香港”。</li> <li><strong>服务器</strong>：填写你获取的服务器地址（IP 或域名）。</li> <li><strong>端口</strong>：填写对应的端口号。</li> <li><strong>加密方式</strong>：这里指的是 V2Ray 的加密方式，通常选择 <code>auto</code> 或 <code>aes-128-gcm</code>。</li> <li><strong>用户 ID</strong>：粘贴你的 UUID 字符串。</li> <li><strong>额外 ID</strong>：如果服务商提供，通常填 0，如果没提供，也填 0。</li> </ul>  <p><strong>关键一步：传输协议设置</strong></p>  <p>点击下方 <strong>“传输”</strong> 或 <strong>“Network”</strong> 选项，这里需要根据你的服务器配置选择： - <strong>传输方式</strong>：如果服务器是默认的 TCP，则选 <code>tcp</code>。如果是 WebSocket，则选 <code>ws</code>。 - <strong>路径</strong>：如果选了 <code>ws</code>，需要填写服务端配置的路径，通常是 <code>/</code> 或 <code>/path</code>。 - <strong>TLS</strong>：如果服务器开启了 TLS 加密，请打开 <strong>“TLS”</strong> 开关，并填写 <strong>“SNI”</strong>（服务器证书域名）。</p>  <p>填写完毕后，点击右上角 <strong>“保存”</strong>。此时，你已经成功添加了一个 V2Ray 节点。</p>  <h2>第四章：实战演练——启用代理并测试效果</h2>  <h3>4.1 选择节点并开启开关</h3>  <p>回到 Quantumult 的主界面。你会看到刚才添加的节点出现在列表中。点击它，使其处于选中状态（通常会出现一个勾选标记）。</p>  <p>接下来，找到主界面顶部的 <strong>“开关”</strong>（一个电源按钮图标），点击它。当按钮变为绿色或橙色时，表示代理已经全局启用。</p>  <h3>4.2 测试连接与分流</h3>  <p>此时，打开 Safari 浏览器，尝试访问 <code>google.com</code> 或 <code>youtube.com</code>。如果页面能顺利加载，恭喜你，配置成功！</p>  <p>但这里有个问题：如果开启了全局代理，访问国内网站（如淘宝、B站）时，可能会变慢。这时，Quantumult 的分流功能就派上用场了。</p>  <ul> <li><strong>配置分流规则</strong>：在“设置” -> “配置文件”中，你可以编辑“分流规则”。Quantumult 内置了丰富的规则集，你也可以导入网上的“国内直连”规则。</li> <li><strong>核心逻辑</strong>：当访问域名命中“直连规则”时，流量不经过 V2Ray 服务器，直接连接；当命中“代理规则”时，才走代理。这样就能实现“国内网站秒开，国外网站流畅”的理想状态。</li> </ul>  <h2>第五章：疑难杂症——常见问题排查与解决</h2>  <p>在配置过程中，你可能会遇到各种问题。别担心，90% 的故障都源于以下几个原因：</p>  <h3>问题 1：无法连接，提示超时</h3>  <ul> <li><strong>检查服务器信息</strong>：重新核对地址、端口、UUID 是否完全一致，注意区分大小写和连字符。</li> <li><strong>检查网络环境</strong>：尝试关闭 WiFi，使用移动数据测试，排除本地网络 DNS 污染问题。</li> <li><strong>更换节点</strong>：如果服务器本身不稳定（如被墙），尝试更换其他节点。</li> </ul>  <h3>问题 2：能连上但速度极慢</h3>  <ul> <li><strong>检查 TLS 设置</strong>：如果服务器开启了 TLS，但你在客户端未开启，会导致数据解密失败或性能下降。</li> <li><strong>更换传输协议</strong>：尝试将 TCP 改为 WebSocket + TLS，后者伪装性更好，在复杂网络环境下通常更稳定。</li> </ul>  <h3>问题 3：部分网站打不开，部分能打开</h3>  <ul> <li><strong>DNS 污染</strong>：在 Quantumult 的“设置” -> “DNS”中，建议将 DNS 设置为 <code>1.1.1.1</code> 或 <code>8.8.8.8</code>，并开启“远程 DNS”，让代理服务器帮你解析域名。</li> </ul>  <h3>问题 4：Quantumult 耗电严重</h3>  <ul> <li><strong>关闭不必要的后台刷新</strong>：在 iOS 系统设置中，关闭 Quantumult 的后台应用刷新权限，仅在需要时手动开启代理。</li> </ul>  <h2>结语：点评与展望</h2>  <p>Quantumult 与 V2Ray 的组合，堪称 iOS 平台上的“网络自由黄金搭档”。Quantumult 用优雅的交互掩盖了 V2Ray 的底层复杂度，让普通用户也能轻松驾驭专业级代理工具。而 V2Ray 则凭借其强大的抗封锁能力和灵活的伪装技术，为 Quantumult 提供了坚实的底层支撑。</p>  <p><strong>优点总结：</strong> 1. <strong>性能稳定</strong>：V2Ray 协议在丢包率和延迟控制上表现优秀，视频播放流畅不卡顿。 2. <strong>隐私安全</strong>：TLS 加密和混淆技术，让你的流量看起来像普通 HTTPS 网站访问，极大降低被检测风险。 3. <strong>生态完善</strong>：Quantumult 支持导入各种规则集，配合脚本甚至能实现自动签到、去广告等高级功能。</p>  <p><strong>使用建议：</strong> 如果你追求极致的稳定和速度，建议不要只依赖单一节点。在 Quantumult 中，你可以配置多个国家的 V2Ray 节点，并开启“自动测试”功能，它会自动选择延迟最低的节点，确保你的网络体验始终在线。</p>  <p>最后，提醒大家：科学上网工具是工具，请遵守当地法律法规，合法合规使用网络。希望这篇指南能帮你打开新世界的大门，享受无界信息的乐趣。如果你在配置过程中遇到任何问题，欢迎在评论区留言，我会尽量为你解答。</p>  <p><strong>现在，拿起你的 iPhone，按照指南操作吧！祝你好运！</strong></p> </div>
+<div class="clearfix"></div>
+<div class="col-md-12 mt-5">
+        <p>上一个：<a href="/news/article-290659.htm">小米手机安装v2ray后界面消失？深度解析与完美解决方案</a></p>
+        <p>下一个：<a href="/news/article-291537.htm">解锁网盘自由：Shadowrocket高效下载全攻略与深度体验</a></p>
+    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="panel panel-default box right-ad-box">
+    <div class="panel-heading">
+        <h3 class="panel-title">特别推荐</h3>
+    </div>
+    <div class="panel-body">
+        <div class="row">
+            <div class="text-center">
+                <a href="javascript:;" class="js_to" data-url="https://c.kilxs.cn/?path=register&code=" data-type="Xingchen" data-code="tlc6gYYx" target="_blank">
+                    <img src="/assets/website/img/G/xingchen.webp" class="avatar" alt="星辰机场">
+                </a>
+                <dl>
+                    <dt><a href="javascript:;" class="js_to" data-url="https://c.kilxs.cn/?path=register&code=" data-type="Xingchen" data-code="tlc6gYYx" target="_blank">星辰机场</a></dt>
+                    <dd>
+                        <p>【包年送2个月】</p><p>1、购买入门版年付套餐额外送2个月，共14个月，只要99元！！！</p><p>2、购买“至尊天皇”年付套餐，额外送2个月，只要299元！！！</p><p>3、购买其他包月类套餐中的年付，同样送2个月！！！</p><p>错过要再等一年！！</p>                    </dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">热门文章</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2"><a href="/news/article-286984.htm" title="PS4科学上网全攻略：解锁全球游戏与高速畅玩指南">PS4科学上网全攻略：解锁全球游戏与高速畅玩指南</a><hr /></li>
+                        <li class="py-2"><a href="/news/article-284359.htm" title="全面解析Shadowrocket优惠码：获取与使用的实用攻略">全面解析Shadowrocket优惠码：获取与使用的实用攻略</a><hr /></li>
+                        <li class="py-2"><a href="/news/article-286091.htm" title="安卓科学上网全攻略：从入门到精通的完整指南">安卓科学上网全攻略：从入门到精通的完整指南</a><hr /></li>
+                        <li class="py-2"><a href="/news/article-292228.htm" title="V2Ray配置全解析：从入门到精通的修改指南">V2Ray配置全解析：从入门到精通的修改指南</a><hr /></li>
+                        <li class="py-2"><a href="/news/article-279482.htm" title="潘多拉与V2Ray：重启之艺术与科学">潘多拉与V2Ray：重启之艺术与科学</a><hr /></li>
+                        <li class="py-2"><a href="/news/article-291537.htm" title="解锁网盘自由：Shadowrocket高效下载全攻略与深度体验">解锁网盘自由：Shadowrocket高效下载全攻略与深度体验</a><hr /></li>
+                        <li class="py-2"><a href="/news/article-282547.htm" title="智能电视网络自由之路：Clash电视版全方位使用指南与疑难解答">智能电视网络自由之路：Clash电视版全方位使用指南与疑难解答</a><hr /></li>
+                        <li class="py-2"><a href="/news/article-283897.htm" title="解锁极速网络：全面指南教你获取Clash订阅网址">解锁极速网络：全面指南教你获取Clash订阅网址</a><hr /></li>
+                        <li class="py-2"><a href="/news/article-278168.htm" title="科学上网：法律风险与合理使用指南">科学上网：法律风险与合理使用指南</a><hr /></li>
+                        <li class="py-2"><a href="/news/article-282991.htm" title="从“超级细胞”到战场王牌：深度拆解《Clash of Clans》超单元的战略密码">从“超级细胞”到战场王牌：深度拆解《Clash of Clans》超单元的战略密码</a><hr /></li>
+                    </ul>
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">归纳</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">1</span> <a href="/date/2026-09/" title="2026-09 归档">2026-09</a></h4>
+            </li>
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">31</span> <a href="/date/2026-08/" title="2026-08 归档">2026-08</a></h4>
+            </li>
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">8</span> <a href="/date/2026-07/" title="2026-07 归档">2026-07</a></h4>
+            </li>
+                    </ul>
+    </div>
+</div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /End Departments  Area -->
+        <!-- Start Footer Area -->
+    <footer class="footer overlay">
+        <!-- Start Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="inner">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-12">
+                            <div class="content">
+                                <p class="copyright-text">
+                                                    <p>本站内容仅供学习与技术研究用途，无意传播或倡导任何违反法律法规的行为。在此声明：用户须自行了解所在地法律法规，合法合规使用；因使用不当产生的法律责任，与本站及作者无关；请在使用前仔细阅读本声明，继续使用即视为同意以上条款。</p>
+                    <p>
+                                                <a href="/news/">新闻资讯</a> |
+                                                <a href="/about-us.htm">关于我们</a> |
+                        <a href="/disclaimer.htm">免责申明</a> |
+                        <a href="/privacy.htm">隐私申明</a> |
+                        <a href="/sitemap.xml">网站地图</a>
+                    </p>
+                                        <div>特别推荐：<b><a href="javascript:;" class="js_to" data-url="https://c.kilxs.cn/?path=register&code=" data-type="Xingchen" data-code="tlc6gYYx" target="_blank">星辰机场</a></b> <p>【包年送2个月】</p><p>1、购买入门版年付套餐额外送2个月，共14个月，只要99元！！！</p><p>2、购买“至尊天皇”年付套餐，额外送2个月，只要299元！！！</p><p>3、购买其他包月类套餐中的年付，同样送2个月！！！</p><p>错过要再等一年！！</p></div>
+                                                    Fast Nodes 免费节点 订阅官网 版权所有
+                                <br />
+                                Powered by WordPress
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Footer Middle -->
+    </footer>
+    <!--/ End Footer Area -->
+    <!-- ========================= scroll-top ========================= -->
+    <a href="#" class="scroll-top">
+        <i class="lni lni-chevron-up"></i>
+    </a>
+    <!-- ========================= JS here ========================= -->
+    <script src="/assets/website/js/frontend/sing_box_node/jquery-3.5.1.min.js"></script>
+    <script src="/assets/website/js/frontend/sing_box_node/bootstrap.min.js"></script>
+    <script src="/assets/website/js/frontend/sing_box_node/wow.min.js"></script>
+    <script src="/assets/website/js/frontend/sing_box_node/tiny-slider.js"></script>
+    <script src="/assets/website/js/frontend/sing_box_node/glightbox.min.js"></script>
+    <script src="/assets/website/js/frontend/sing_box_node/count-up.min.js"></script>
+    <script src="/assets/website/js/frontend/sing_box_node/imagesloaded.min.js"></script>
+    <script src="/assets/website/js/frontend/sing_box_node/isotope.min.js"></script>
+    <script src="/assets/website/js/frontend/sing_box_node/main.js"></script>
+    <script type="text/javascript">
+    //======== Hero Slider
+    var slider = new tns({
+        container: '.hero-slider',
+        slideBy: 'page',
+        autoplay: true,
+        autoplayButtonOutput: false,
+        mouseDrag: true,
+        gutter: 0,
+        items: 1,
+        nav: false,
+        controls: true,
+        controlsText: [
+            '<i class="lni lni-chevron-left"></i>',
+            '<i class="lni lni-chevron-right"></i>'
+        ],
+        responsive: {
+            1200: {
+                items: 1,
+            },
+            992: {
+                items: 1,
+            },
+            0: {
+                items: 1,
+            }
+
+        }
+    });
+    //========= testimonial 
+    tns({
+        container: '.testimonial-slider',
+        items: 3,
+        slideBy: 'page',
+        autoplay: false,
+        mouseDrag: true,
+        gutter: 0,
+        nav: true,
+        controls: false,
+        controlsText: ['<i class="lni lni-arrow-left"></i>', '<i class="lni lni-arrow-right"></i>'],
+        responsive: {
+            0: {
+                items: 1,
+            },
+            540: {
+                items: 1,
+            },
+            768: {
+                items: 2,
+            },
+            992: {
+                items: 2,
+            },
+            1170: {
+                items: 3,
+            }
+        }
+    });
+
+    //====== counter up 
+    var cu = new counterUp({
+        start: 0,
+        duration: 2000,
+        intvalues: true,
+        interval: 100,
+        append: " ",
+    });
+    cu.start();
+    //========= glightbox
+    GLightbox({
+        'href': '#',
+        'type': 'video',
+        'source': 'youtube', //vimeo, youtube or local
+        'width': 900,
+        'autoplayVideos': true,
+    });
+    //============== isotope masonry js with imagesloaded
+    imagesLoaded('#container', function() {
+        var elem = document.querySelector('.grid');
+        var iso = new Isotope(elem, {
+            // options
+            itemSelector: '.grid-item',
+            masonry: {
+                // use outer width of grid-sizer for columnWidth
+                columnWidth: '.grid-item'
+            }
+        });
+
+        let filterButtons = document.querySelectorAll('.portfolio-btn-wrapper button');
+        filterButtons.forEach(e =>
+            e.addEventListener('click', () => {
+
+                let filterValue = event.target.getAttribute('data-filter');
+                iso.arrange({
+                    filter: filterValue
+                });
+            })
+        );
+    });
+    </script>
+    <script src="https://www.freeclashnode.com/assets/js/frontend/invite-url.js"></script>
+    <script src="/assets/website/js/frontend/G.js"></script>
+</body>
+
+</html>
